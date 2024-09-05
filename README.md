@@ -5,14 +5,14 @@
 This application allows users to manage course records. Built with a focus on simplicity, it has functionalities to add, search, and delete courses.
 The application handles course details such as subject, course number (formatted as three-digit, zero-padded integer), and description. And it prevents the addition of duplicate courses and validates course numbers.
 
-<!-- ## Project presentation
+## Project presentation
 
 <img
-  alt="Civitas API"
-  title="Civitas API' presentation gif"
-  src="./src/assets/presentationGif2.gif"
+  alt="Civitas WEB"
+  title="Civitas WEB' presentation gif"
+  src="./src/assets/presentationGif.gif"
   height="425"
-/> -->
+/>
 
 ## Functionalities
 
@@ -29,11 +29,11 @@ The application handles course details such as subject, course number (formatted
 
 ## Used Techs
 
-- Axios:
-- Lucide-react:
-- Tailwind:
-- Yup:
-- Vitejs:
+- Axios: Popular JavaScript library used to make HTTP requests from the browser or Node.js.
+- Lucide-react: A React-based icon library that provides a modern, open-source alternative to the Feather icons set.
+- Tailwind: Is a utility-first CSS framework designed to build modern, responsive websites without writing custom CSS.
+- Yup: A JavaScript schema builder for value parsing and validation.
+- Vitejs: A fast and modern build tool for web development, focusing on performance and simplicity.
 
 # How to run the project
 
