@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 * {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }

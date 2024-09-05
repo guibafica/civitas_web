@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+<h1 align="center">CIVITAS - WEB</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About this Project
 
-Currently, two official plugins are available:
+This application allows users to manage course records. Built with a focus on simplicity, it has functionalities to add, search, and delete courses.
+The application handles course details such as subject, course number (formatted as three-digit, zero-padded integer), and description. And it prevents the addition of duplicate courses and validates course numbers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- ## Project presentation
 
-## Expanding the ESLint configuration
+<img
+  alt="Civitas API"
+  title="Civitas API' presentation gif"
+  src="./src/assets/presentationGif2.gif"
+  height="425"
+/> -->
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Functionalities
 
-- Configure the top-level `parserOptions` property like this:
+- Primary
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  - Search: Find courses by partial descriptions (e.g., "Bio" finds "Introduction to Biology").
+  - Add/Delete: Easily add new courses or delete existing ones.
+  - Validation: Ensures course number formatting and unique course entries.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Secondary
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+  - When listing courses, the application could include pagination functionality to improve navigation of longer course lists.
+  - Unit tests of application routes.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Used Techs
+
+- Axios:
+- Lucide-react:
+- Tailwind:
+- Yup:
+- Vitejs:
+
+# How to run the project
+
+> Node version used: v20.9.0
+
+> NPM version used: v10.1.0
+
+## Application
+
+````bash
+# (1) Install project dependencies
+npm install
+
+```bash
+# (2) Run the application on localhost -> http://localhost:5173
+npm run dev
+````
+
+# Author
+
+Made with 💚 by Guilherme Bafica 👋
+
+[![LinkedIn Badge](https://img.shields.io/badge/-GuilhermeBafica-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guilhermebafica/)](https://www.linkedin.com/in/guilhermebafica/)
